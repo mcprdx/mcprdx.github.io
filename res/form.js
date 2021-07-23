@@ -4,6 +4,10 @@ $(function() {
 
         /* Validate */
         
+        $(".input-name").attr('style', 'display: none;');
+        $(".input-email").attr('style', 'display: none;');
+
+
         var check = true;
         let name = document.forms["contactForm"]["name"].value;
 
@@ -12,7 +16,6 @@ $(function() {
             check=false;
         }
 
-    
         let email = document.forms["contactForm"]["email"].value;
         if(email.trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
             $(".input-email").attr('style', 'display: inline;');
