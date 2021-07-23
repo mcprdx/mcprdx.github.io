@@ -3,7 +3,7 @@
 <html>
 <head>
 
-<title>Contacto</title>
+<title>Inicio</title>
 
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -13,6 +13,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto%3Ai%2C300%2C400%7CComfortaa%3Ai%2C600&display=swap" rel="stylesheet" nonce="n0t/N55Q5EPFRPnvj31YNg">
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="./res/style.css">
 
@@ -20,23 +22,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+<style> .inputhidden {display: none;} </style>
+
 </head>
 
 <body class="">
 
+
 <script src="./res/navbar.js"></script>
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-scroll">
   <a class="navbar-brand" href="./index.html">
-  	<div class="img_fluid"> <img height="18" src="./res/l_w.png" class="d-inline-block align-top" alt=""> </div>
+    <div class="img_fluid"> <img height="18" src="./res/l_w.png" class="d-inline-block align-top" alt=""> </div>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item"> <a class="nav-link py-md-0 nav-scroll" href="./index.html">Inicio<span class="sr-only">(current)</span></a> </li>
-      <li class="nav-item"> <a class="nav-link py-md-0 nav-scroll " href="./equipo.html">Equipo</a> </li>
-      <li class="nav-item"> <a class="nav-link py-md-0 nav-scroll inuse" href="./contacto.html">Contacto</a> </li>
+      <li class="nav-item act"> <a class="nav-link py-md-0 nav-scroll inuse" href="./index.html">Inicio<span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item"> <a class="nav-link py-md-0 nav-scroll" href="./equipo.html">Equipo</a> </li>
+      <li class="nav-item"> <a class="nav-link py-md-0 nav-scroll" href="./contacto.html">Contacto</a> </li>
     </ul>
   </div>
 </nav>
@@ -44,20 +49,74 @@
 
 <!––  Title ––>
 
-<section id="title" class="wrapper bg_contact">
-	<div class="content title flex-column"> <p style="color:#fff;">Contacto</p> </div>
+<section id="header" class="wrapper bg_main">
+	<div class="content main flex-column">	
+		<div class="main-logo"><div class="img_fluid"><img src="./res/logo.png" alt="Paradox"></div></div>
+		<p class="main-logo">EQUITY FUND</p>
+
+		<h2>Base fundamental, ejecución cuantitativa</h2>
+		<div>
+			<a href="./contacto.html" class="button-empty">¿Quieres saber más?</a>
+			<a href="./contacto.html" class="button-filled">Invierte con nosotros</a>
+		</div>
+	</div>
+</section>
+
+<!––  Section A ––>
+
+<section id="s1" class="wrapper">
+	<div class="content s1 flex-row">
+		
+		<div class="column tri">
+			<div class="img_fluid"><img src="./res/c1.jpg" role="img" alt=""></div>
+			<h2>Asesoramiento<br>Independiente</h2>
+			<p> Asesoramos al fondo de renta variable internacional <a href="https://www.cnmv.es/portal/Consultas/IIC/Fondo.aspx?nif=V42716340" target="_blank">Paradox Equity Fund</a> gestionado por <a href="https://wz.welzia.com/" target="_blank">Welzia Management</a>.</span> </p>
+		</div>
+
+		<div class="column tri">
+			<div class="img_fluid"><img src="./res/c2.jpg" role="img" alt=""></div>
+			<h2>Gestión Fundamental<br>Cuantitativa</h2> <p>Aplicamos análisis fundamental con la potencia, consistencia e imparcialidad de un sistema cuantitativo.</p>
+		</div>
+
+		<div class="column tri">
+			<div class="img_fluid"><img src="./res/c3.jpg" role="img" alt=""></div>
+			<h2>Rentabilidad<br>Largo Plazo</h2> <p>Queremos maximizar rentabilidad largo plazo. Estamos siempre invertidos y no utilizamos deuda ni posiciones cortas.</p>
+		</div>
+
+	</div>
+</section>
+
+<!––  Section B ––>
+
+<section id="s2" class="wrapper paddingless light"> <div class="content"><h1>Nuestra historia</h1></div> </section>
+
+<section id="s2" class="wrapper light">
+<div class="content s2 flex-row">
+
+	<div class="column bi_left">
+		<div class="img_fluid"><img src="./res/h1.jpg" class="img_fluid" role="img" alt=""></div>
+	</div>
+
+	<div class="column bi_right">
+		<h2>Nuestros inicios</h2>
+		<p>Tras años de experiencia en puestos técnicos y financieros, tres ingenieros se proponen revolucionar la gestión de activos tradicional, fusionando análisis fundamental y tecnología.</p>
+		<h2>¿Por qué ahora?</h2>
+		<p>Los recientes avances en Machine Learning (aprendizaje autónomo) hacen posible crear estrategias de inversión consistentes, imparciales y contrastables. Sin embargo, su adopción en la industria de la gestión es aun marginal. </p>
+		<h2>El Fondo</h2>
+		<p>Asesoramos al fondo <a href="https://www.cnmv.es/portal/Consultas/IIC/Fondo.aspx?nif=V42716340" target="_blank">Paradox Equity Fund</a>, gestionado por <a href="https://wz.welzia.com/" target="_blank">Welzia Management</a>, mediante la implementación estricta de nuestro modelo de inversión fundamental cuantitativa.</p>
+	</div>
+
+</div>
 </section>
 
 <!––  Contacto ––>
 
-<section id="s2" class="wrapper paddingless">
-	<div class="content flex-column"><h1>Nos pondremos en contacto lo antes posible</h1></div>
-</section>
-
-<section id="s2" class="wrapper">
+<section id="s1" class="wrapper">
 <div class="content flex-column">
+	
+	<h1>¿Quieres saber más?</h1>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./res/form.js"></script>
 
     <form name="contactForm" id="contactForm">
@@ -67,7 +126,7 @@
         <input class="input" type="text" name="email" id="email" placeholder="Email (obligatorio)">  <!––  Valid email is required: ex@abc.xyz––>
         <label class="input-warning input-email" > * Introduzca un email con valido (formato aaa@bbb.ccc) </label>
         <input class="input inputhidden" type="text" name="phone" id="phone" placeholder="Teléfono (opcional)">
-        <textarea style="height: 150px;" class="input inputhidden" name="messagebox" id="messagebox" placeholder="Escribenos un mensaje (opcional)"></textarea>
+        <textarea style="height: 150px;" class="input inputhidden" name="message" id="message" placeholder="Escribenos un mensaje (opcional)"></textarea>
         
         <div class="input-holder">
             <input class="button-empty mode-send" type="submit" class="submit" id="submit" value="Enviar">
