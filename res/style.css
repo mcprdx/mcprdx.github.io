@@ -148,6 +148,7 @@ ul li {padding-left: 0.5em;}
 .main-logo{ width: 70%; min-width: 200px; font-family: 'Comfortaa'; font-size: 1.6em; margin: 0.2em 0; letter-spacing: 10px;}
 @media screen and (max-width: 1280px) { .main-logo{width: 80%; font-size: 1.5em;} }
 @media screen and (max-width: 736px) { .main-logo{width: 95%; font-size: 1.3em;} }
+@media screen and (max-width: 480px) { .main-logo{width: 95%; font-size: 1.1em;}  }
 
 
 /* team modal */
