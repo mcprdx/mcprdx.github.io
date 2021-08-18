@@ -30,10 +30,12 @@ $(function() {
         if ($('#messagebox:visible').length == 0) { var type = 'Newsletter'; }
         else { var type = 'Contact'; }
 
+        alert($("#contactForm").serialize() + '&type=' + type,) 
+
         $.ajax({
             url: "https://script.google.com/macros/s/AKfycbwutJtY8C8NZD51kOW7Sn_QRVaPXuN_qZrOJYS47X-XFm8HSSNo/exec",
             method: "POST",
-            dataType: "json",
+            dataType: "json",     
             data: $("#contactForm").serialize() + '&type=' + type,
             success: function(response) {
 
