@@ -30,22 +30,22 @@ $(function() {
         if ($('#messagebox:visible').length == 0) { var type = 'Newsletter'; }
         else { var type = 'Contact'; }
 
-        alert($("#contactForm").serialize() + '&type=' + type,) 
+        var post_data =  $("#contactForm").serialize() + '&type=' + type
 
         $.ajax({
             url: "https://script.google.com/macros/s/AKfycbwutJtY8C8NZD51kOW7Sn_QRVaPXuN_qZrOJYS47X-XFm8HSSNo/exec",
             method: "POST",
             dataType: "json",     
-            data: $("#contactForm").serialize() + '&type=' + type,
+            data: post_data,
             success: function(response) {
 
                 if(response.result == "success") {
                     $('#contactForm')[0].reset();
                     $(".mode-send").attr('style', 'display: none !important;');
                     $(".mode-sent").attr('style', 'display: inline !important;');
-                } else { alert("Something went wrong. Please try again.") }
+                } else { alert("Something went wrong. Please try again." + post_data) }
             },
-            error: function() { alert("Something went wrong. Please try again.")  }
+            error: function() { alert("Something went wrong. Please try again. 2")  }
         })
 
 
