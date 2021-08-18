@@ -26,8 +26,9 @@ $(function() {
 
         /* Validate */
 
-        if ($('#messagebox:visible').length == 0) { var type = 'Newsletter'; }
+        if ($('#message:visible').length == 0) { var type = 'Newsletter'; }
         else { var type = 'Contact'; }
+
         var post_data =  $("#contactForm").serialize() + '&type=' + type
 
         $.ajax({
