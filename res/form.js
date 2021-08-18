@@ -32,7 +32,7 @@ $(function() {
         var post_data =  $("#contactForm").serialize() + '&type=' + type
 
         $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbwFCMTLASTOJYaOFFIsVjcCnKarvtTzw82Cj10CZOOdJINb5DjJbHuPWQMkzjYSluVYhQ/exec",
+            url: "https://script.google.com/macros/s/AKfycbwmxKOxPAHC1j4JPyPHBjAeN831YceA26sIzpThNLt3aOPeKj_EHz9Hh_EKqSjaQya38g/exec",
             method: "POST",
             dataType: "json",     
             data: post_data,
