@@ -31,7 +31,7 @@ $(function() {
         else { var type = 'Contact'; }
 
         $.ajax({
-            url: "hhttps://script.google.com/macros/s/AKfycbwutJtY8C8NZD51kOW7Sn_QRVaPXuN_qZrOJYS47X-XFm8HSSNo/exec",
+            url: "https://script.google.com/macros/s/AKfycbwutJtY8C8NZD51kOW7Sn_QRVaPXuN_qZrOJYS47X-XFm8HSSNo/exec",
             method: "POST",
             dataType: "json",
             data: $("#contactForm").serialize() + '&type=' + type,
