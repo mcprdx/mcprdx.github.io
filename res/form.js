@@ -28,7 +28,6 @@ $(function() {
 
         if ($('#messagebox:visible').length == 0) { var type = 'Newsletter'; }
         else { var type = 'Contact'; }
-
         var post_data =  $("#contactForm").serialize() + '&type=' + type
 
         $.ajax({
@@ -42,9 +41,9 @@ $(function() {
                     $('#contactForm')[0].reset();
                     $(".mode-send").attr('style', 'display: none !important;');
                     $(".mode-sent").attr('style', 'display: inline !important;');
-                } else { alert(post_data+response.result+response.error) }
+                } else { alert("Something went wrong. Please try again.") }
             },
-            error: function() { alert(" - Something went wrong. Please try again.")  }
+            error: function() { alert("Something went wrong. Please try again.")  }
         })
 
 
