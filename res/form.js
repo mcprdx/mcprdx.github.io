@@ -42,7 +42,7 @@ $(function() {
                     $('#contactForm')[0].reset();
                     $(".mode-send").attr('style', 'display: none !important;');
                     $(".mode-sent").attr('style', 'display: inline !important;');
-                } else { alert("Something went wrong. Please try again."+post_data+response.result) }
+                } else { alert(post_data+response.result+response.error) }
             },
             error: function() { alert(" - Something went wrong. Please try again.")  }
         })
