@@ -3,13 +3,18 @@ $(function() {
         e.preventDefault();  //prevent form from submitting
 
         /* Validate */
-        
         $(".input-name").attr('style', 'display: none;');
         $(".input-email").attr('style', 'display: none;');
-
+        $(".input-cbox").attr('style', 'display: none;');
 
         var check = true;
-        let name = document.forms["contactForm"]["name"].value;
+        var name = document.forms["contactForm"]["name"].value;
+        var cbox = document.forms["contactForm"]["cbox"].checked;
+
+        if( cbox == false){
+            $(".input-cbox").attr('style', 'display: inline;');
+            check=false;
+        }
 
         if( name.trim() == ''){
             $(".input-name").attr('style', 'display: inline;');

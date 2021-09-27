@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>System</title>
+<meta name="description" content="."/>
+
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<link rel="icon" href="./res/icon.png" type="image/png">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="./res/style.css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<style> .inputhidden {display: none;} </style>
+
+</head>
+
+<body class="">
+
+
+<!––  NAV  ––>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top nav-scroll">
+  <a class="navbar-brand" href="./en.html">
+    <div class="img_fluid"> <img src="./res/logo.png" class="d-inline-block align-top navbar-img-size" alt=""> </div>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item"> <a class="nav-link py-md-0" href="./en.html">Home</a> </li>
+      <li class="nav-item"> <a class="nav-link py-md-0 inuse" href="./system.html">The Fund</a> </li>
+      <li class="nav-item"> <a class="nav-link py-md-0" href="./team.html">Team</a> </li>
+      <li class="nav-item nav-item-highlight"> <a class="nav-link py-md-0" href="./contact.html">Contact us</a> </li>
+
+      <li class="nav-item"> <div class="lang"> <a href="./sistema.html">ESP</a> <span>/</span> ENG </div> </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="lyt_top"></section>
+
+
+<!––  Section A ––>
+
+<section>
+  <div class="lyt_section lyt_h90 flex-column flex-center">
+
+    <h1>We invest our own and our investors’ money via the Paradox Equity Fund </h1>
+
+    <ol class="numbered flex-row flex-spacing">
+
+      <li>
+        <span>Global Equities</span><br>
+        We invest in liquid companies from developed countries.
+      </li>
+
+      <li>
+        <span>Always invested</span><br>
+        We do not try to predict short term market fluctuations.
+      </li>
+
+      <li>
+        <span>No debt, no derivatives</span><br>
+        We do not use any debt, short positions or derivative products.
+      </li>
+
+      <li>
+        <span>Consolidated businesses</span><br>
+        We avoid companies with unproven business models or extreme financial metrics.
+      </li>
+
+    </ol>
+
+    <span class="column_w100" style="height: 0.5em;"></span>
+    <span class="flow_right">
+      <a href="https://www.cnmv.es/portal/Consultas/IIC/Fondo.aspx?nif=V42716340" target="_blank"> > prospectus </a>
+      <a class="a_blue" href="https://www.morningstar.es/es/funds/snapshot/snapshot.aspx?id=F000016DYL" target="_blank"> > morningstar </a>
+    </span>
+
+  </div>
+
+  <section id="scroll_tag_a"> </section>
+  <div> <a href="#scroll_tag_a"><div class="flow_arrow_full"></div></a> </div>
+
+</section>
+
+
+<!––  Contacto ––>
+<section class="bg_light">
+<div class="lyt_section flex-column form_contact">
+	
+	<h2>Join our newsletter</h2>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./res/form.js"></script>
+
+    <form name="contactForm" id="contactForm">
+        <input class="input" type="text" name="name" id="name" placeholder="Name (required)"> <!––  Name is required––>
+        <label class="input-warning input-name" > * We need a name </label>
+        <input class="input" type="text" name="email" id="email" placeholder="Email (required)">  <!––  Valid email is required: ex@abc.xyz––>
+        <label class="input-warning input-email" > * We need a valid email (format aaa@bbb.ccc) </label>
+        <input class="input inputhidden" type="text" name="phone" id="phone" placeholder="Teléfono (opcional)">
+        <textarea style="height: 150px;" class="input inputhidden" name="message" id="message" placeholder="Escribenos un mensaje (opcional)"></textarea>
+
+        <label class="check"  style="font-size: 0.8em;"> <input type="checkbox" name="cbox" id="cbox" >
+          Yes, I accept the <a href="./privacy.html" target="_blank">privacy policy</a> and agree to receive commercial information.
+        </label>
+        <label class="input-warning input-cbox" > * We can't reach you unless you agree to our policy.</label>
+
+        <div class="input-holder">
+            <input class="button-empty mode-send" type="submit" class="submit" id="submit" value="Send">
+            <div class="button-filled mode-sent"> Sent </div>
+        </div>
+
+    </form>
+
+</div>
+</section>
+
+
+<!––  Footer ––>
+<footer class="bg_dark">
+  <div class="lyt_section lyt_footer flex-row">
+
+    <div class="column_w50 flex-row lyt_footer_left">
+        <div class="lyt_footer_logo">
+            <div class="img_fluid"> <img src="./res/l_a.png" ole="img" aria-label="Contacto"> </div>
+        </div>
+        <div class="flex-bottom">
+            <p class="h1_footer">Contact</p>
+            <p><a href="https://goo.gl/maps/1AcRZGSZ31LoYUcBA" target="_blank">Rodríguez San Pedro 2, Madrid, Spain</a> </p>
+            <p><a href="mailto:paradox@paradoxam.com" target="_blank">paradox@paradoxam.com</a></p>
+            <p><a href="https://www.linkedin.com/company/paradox-capital" target="_blank">Linkedin</a></p>
+        </div>
+    </div>
+
+    <div class="column_w50 lyt_footer_right flex-bottom">
+        <p><a href="https://www.cnmv.es/portal/Consultas/IIC/Fondo.aspx?nif=V42716340" target="_blank">CNMV Documents</a></p>
+        <p>Copyright © 2021 - All rights reserved</p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+</body>
+</html>

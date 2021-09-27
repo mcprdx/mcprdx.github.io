@@ -4,15 +4,14 @@
 <head>
 
 <title>Contacto</title>
+<meta name="description" content="Contactanos, responderemos lo antes posible."/>
+
 
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 <link rel="icon" href="./res/icon.png" type="image/png">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="./res/style.css">
 
@@ -24,83 +23,100 @@
 
 <body class="">
 
-<script src="./res/navbar.js"></script>
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-scroll">
+<!––  NAV  ––>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top nav-scroll">
   <a class="navbar-brand" href="./index.html">
-  	<div class="img_fluid"> <img height="18" src="./res/l_w.png" class="d-inline-block align-top" alt=""> </div>
+    <div class="img_fluid"> <img src="./res/logo.png" class="d-inline-block align-top navbar-img-size" alt=""> </div>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item"> <a class="nav-link py-md-0 nav-scroll" href="./index.html">Inicio<span class="sr-only">(current)</span></a> </li>
-      <li class="nav-item"> <a class="nav-link py-md-0 nav-scroll inuse" href="./contacto.html">Contacto</a> </li>
+      <li class="nav-item"> <a class="nav-link py-md-0" href="./index.html">Inicio<span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item"> <a class="nav-link py-md-0" href="./sistema.html">¿Qué hacemos?</a> </li>
+      <li class="nav-item"> <a class="nav-link py-md-0" href="./equipo.html">Equipo</a> </li>
+      <li class="nav-item nav-item-highlight"> <a class="nav-link py-md-0 inuse" href="./contacto.html">Contáctanos</a> </li>
+
+       <li class="nav-item"> <div class="lang"> ESP <span>/</span> <a href="./contact.html">ENG</a> </div> </li>
     </ul>
   </div>
 </nav>
 
 
-<!––  Title ––>
+<!––  Content ––>
+<section class="lyt_top"></section>
 
-<section id="title" class="wrapper bg_contact">
-	<div class="content title flex-column"> <p style="color:#fff;">Contacto</p> </div>
-</section>
+<section>
+<div class="lyt_section flex-row">
 
-<!––  Contacto ––>
+  <div class="column_w60">
 
-<section id="s2" class="wrapper paddingless">
-	<div class="content flex-column"><h1>Nos pondremos en contacto lo antes posible</h1></div>
-</section>
+    <div>
+      <h1 style="margin-bottom: 0;">Contacta con nosotros</h1>
+      <h3>Enviaremos una respuesta lo antes posible</h3>
+    </div>
+    <br>
 
-<section id="s2" class="wrapper">
-<div class="content flex-column">
+    <div class="flex-column form_contact">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./res/form.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./res/form.js"></script>
 
-    <form name="contactForm" id="contactForm">
-        
-        <input class="input" type="text" name="name" id="name" placeholder="Nombre (obligatorio)"> <!––  Name is required––>
-        <label class="input-warning input-name" > * Introduzca un nombre </label>
-        <input class="input" type="text" name="email" id="email" placeholder="Email (obligatorio)">  <!––  Valid email is required: ex@abc.xyz––>
-        <label class="input-warning input-email" > * Introduzca un email con valido (formato aaa@bbb.ccc) </label>
-        <input class="input inputhidden" type="text" name="phone" id="phone" placeholder="Teléfono (opcional)">
-        <textarea style="height: 150px;" class="input inputhidden" name="message" id="message" placeholder="Escribenos un mensaje (opcional)"></textarea>
-        
-        <div class="input-holder">
-            <input class="button-empty mode-send" type="submit" class="submit" id="submit" value="Enviar">
-            <div class="button-filled mode-sent"> Enviado </div>
-        </div>
+        <form name="contactForm" id="contactForm">
+            
+            <input class="input" type="text" name="name" id="name" placeholder="Nombre (obligatorio)"> <!––  Name is required––>
+            <label class="input-warning input-name" > * Necesitamos su nombre </label>
+            <input class="input" type="text" name="email" id="email" placeholder="Email (obligatorio)">  <!––  Valid email is required: ex@abc.xyz––>
+            <label class="input-warning input-email" > * Necesitamos un email válido (formato aaa@bbb.ccc) </label>
+            <input class="input inputhidden" type="text" name="phone" id="phone" placeholder="Teléfono (opcional)">
+            <textarea style="height: 24vh;" class="input inputhidden" name="messagebox" id="messagebox" placeholder="Escribenos un mensaje (opcional)"></textarea>
 
-    </form>
+
+            <label class="check"  style="font-size: 0.8em;"> <input type="checkbox" name="cbox" id="cbox" >
+              Sí, acepto la <a href="./privacidad.html" target="_blank">política de privacidad</a> y recibir comunicaciones comerciales.
+            </label>
+            <label class="input-warning input-cbox" >* No podemos contactarle si no acepta nuestra política.</label>
+            
+            <div class="input-holder">
+                <input class="button-empty mode-send" type="submit" class="submit" id="submit" value="Enviar">
+                <div class="button-filled mode-sent"> Enviado </div>
+            </div>
+
+        </form>
+
+    </div>
+  
+  </div>
+
+  <div class="column_w30 background_right"></div>
 
 </div>
 </section>
 
+
 <!––  Footer ––>
+<footer class="bg_dark">
+  <div class="lyt_section lyt_footer flex-row">
 
-<footer class="wrapper footer_global">
-<div class="content flex-row">
-
-    <div class="f_two f_left">
-        <div class="f_floater">
-            <div class="img_fluid"> <img height="90" src="./res/l_a.png" ole="img" aria-label="Paradox Capital"> </div>
+    <div class="column_w50 flex-row lyt_footer_left">
+        <div class="lyt_footer_logo">
+            <div class="img_fluid"> <img src="./res/l_a.png" ole="img" aria-label="Contacto"> </div>
         </div>
-        <div class="f_floater flex-bottom">
-            <h3>Contacto</h3>
+        <div class="flex-bottom">
+            <p class="h1_footer">Contacto</p>
             <p><a href="https://goo.gl/maps/1AcRZGSZ31LoYUcBA" target="_blank">Rodríguez San Pedro 2, Madrid, Spain</a> </p>
             <p><a href="mailto:paradox@paradoxam.com" target="_blank">paradox@paradoxam.com</a></p>
             <p><a href="https://www.linkedin.com/company/paradox-capital" target="_blank">Linkedin</a></p>
         </div>
     </div>
 
-    <div class="f_two f_right flex-bottom">
+    <div class="column_w50 lyt_footer_right flex-bottom">
         <p><a href="https://www.cnmv.es/portal/Consultas/IIC/Fondo.aspx?nif=V42716340" target="_blank"> Documentación CNMV</a></p>
         <p>Copyright © 2021 - Todos los derechos reservados</p>
     </div>
 
-</div>
+  </div>
 </footer>
 
 
