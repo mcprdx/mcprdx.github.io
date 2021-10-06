@@ -2,38 +2,35 @@ $(function() {
     $('#supportForm').on('submit', function(e) { //use on if jQuery 1.7+
         e.preventDefault();  //prevent form from submitting
 
-
         /* alert("I am an alert box!"); */
 
-        /* Validate 
-        $(".input-warning").attr('style', 'display: none;');
-        */
-
+        /* Validate */
+        $(".input-must").attr('style', 'display: none;');
+    
         var check = true;
 
-        /* 
-        var myStringArray = ["Hello","World"];
-        var arrayLength = myStringArray.length;
-        for (var i = 0; i < arrayLength; i++) {
+        for (var i = 0; i < 25; i++) {
+            var e_inside = 'e' + (i+1);
+            var e_warning = '.input-e' + (i+1);
+            var name = document.forms["supportForm"][e_inside].value;
 
-            var name = document.forms["contactForm"]["name"].value;
             if( name.trim() == ''){
-
-
-                # TEMP create input eX name
-                $(".input-eX").attr('style', 'display: inline;');
+                $(e_warning).attr('style', 'display: inline;');
                 check=false;
             }
-
         }
 
+        var cbox = document.forms["supportForm"]["cbox"].checked;
+        if( cbox == false){
+            $(".input-cbox").attr('style', 'display: inline;');
+            check=false;
+        }
+
+
         if(!check) return false;
-        */
-        alert(check);
+
         /* Validate */
         var post_data =  $("#supportForm").serialize();
-
-        alert(post_data);
 
         $.ajax({
             url: "https://script.google.com/macros/s/AKfycbwpZ8LE3ExWU4JIpbBs86aqnfJszQ6fbKhOCH0J4X21PeJM_4URucJX9hzhfXL0HQDw9g/exec",
@@ -48,7 +45,7 @@ $(function() {
                     $(".mode-sent").attr('style', 'display: inline !important;');
                 } else { alert("Something went wrong ("+response+").") }
             },
-            error: function() { alert("Something went wrong (e02).")  }
+            error: function() { alert("Something went wrong.")  }
         })
 
 
