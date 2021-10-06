@@ -7,23 +7,23 @@
 
 <url>
   <loc>https://paradoxequityfund.com/</loc>
-  <xhtml:link rel="alternate" hreflang="en" href="https://paradoxequityfund.com/en.html"/>
+  <link rel="alternate" hreflang="en" href="https://paradoxequityfund.com/en.html"/>
 </url>
 <url>
   <loc>https://paradoxequityfund.com/contacto.html</loc>
-  <xhtml:link rel="alternate" hreflang="en" href="https://paradoxequityfund.com/contact.html"/>
+  <link rel="alternate" hreflang="en" href="https://paradoxequityfund.com/contact.html"/>
 </url>
 <url>
   <loc>https://paradoxequityfund.com/fondo.html</loc>
-  <xhtml:link rel="alternate" hreflang="en" href="https://paradoxequityfund.com/fund.html"/>
+  <link rel="alternate" hreflang="en" href="https://paradoxequityfund.com/fund.html"/>
 </url>
 <url>
   <loc>https://paradoxequityfund.com/equipo.html</loc>
-  <xhtml:link rel="alternate" hreflang="en" href="https://paradoxequityfund.com/team.html"/>
+  <link rel="alternate" hreflang="en" href="https://paradoxequityfund.com/team.html"/>
 </url>
 <url>
   <loc>https://paradoxequityfund.com/ia.html</loc>
-  <xhtml:link rel="alternate" hreflang="en" href="https://paradoxequityfund.com/ai.html"/>
+  <link rel="alternate" hreflang="en" href="https://paradoxequityfund.com/ai.html"/>
 </url>
 
 </urlset>
