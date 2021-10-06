@@ -3,7 +3,7 @@
 <html>
 <head>
 
-<title>System</title>
+<title>Sistema</title>
 <meta name="description" content="."/>
 
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
@@ -36,7 +36,7 @@
 
 <!––  NAV  ––>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top nav-scroll">
-  <a class="navbar-brand" href="./en.html">
+  <a class="navbar-brand" href="./index.html">
     <div class="img_fluid"> <img src="./res/logo.png" class="d-inline-block align-top navbar-img-size" alt=""> </div>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,12 +44,12 @@
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item"> <a class="nav-link py-md-0" href="./en.html">Home</a> </li>
-      <li class="nav-item"> <a class="nav-link py-md-0 inuse" href="./system.html">The Fund</a> </li>
-      <li class="nav-item"> <a class="nav-link py-md-0" href="./team.html">Team</a> </li>
-      <li class="nav-item nav-item-highlight"> <a class="nav-link py-md-0" href="./contact.html">Contact us</a> </li>
+      <li class="nav-item"> <a class="nav-link py-md-0" href="./index.html">Inicio</a> </li>
+      <li class="nav-item"> <a class="nav-link py-md-0 inuse" href="./fondo.html">El Fondo</a> </li>
+      <li class="nav-item"> <a class="nav-link py-md-0" href="./equipo.html">Equipo</a> </li>
+      <li class="nav-item nav-item-highlight"> <a class="nav-link py-md-0" href="./contacto.html">Contáctanos</a> </li>
 
-      <li class="nav-item"> <div class="lang"> <a href="./sistema.html">ESP</a> <span>/</span> ENG </div> </li>
+      <li class="nav-item"> <div class="lang"> ESP <span>/</span> <a href="./fund.html">ENG</a> </div> </li>
     </ul>
   </div>
 </nav>
@@ -62,35 +62,35 @@
 <section>
   <div class="lyt_section lyt_h90 flex-column flex-center">
 
-    <h1>We invest our own and our investors’ money via the Paradox Equity Fund </h1>
+    <h1>Invertimos nuestro capital y el de nuestros inversores vía el fondo Paradox Equity Fund </h1>
 
     <ol class="numbered flex-row flex-spacing">
 
       <li>
-        <span>Global Equities</span><br>
-        We invest in liquid companies from developed countries.
+        <span> Renta variable global</span><br>
+        Invertimos en compañías líquidas en mercados mundiales desarrollados.
       </li>
 
       <li>
-        <span>Always invested</span><br>
-        We do not try to predict short term market fluctuations.
+        <span>Siempre invertidos</span><br>
+        No intentamos predecir movimientos del mercado en el corto plazo.
       </li>
 
       <li>
-        <span>No debt, no derivatives</span><br>
-        We do not use any debt, short positions or derivative products.
+        <span>Sin deuda ni derivados</span><br>
+        No utilizamos deuda, ni posiciones cortas, ni productos derivados.
       </li>
 
       <li>
-        <span>Consolidated businesses</span><br>
-        We avoid companies with unproven business models or extreme financial metrics.
+        <span>Compañías consolidadas</span><br>
+        Evitamos compañías con modelos de negocio no probados o métricas extremas.
       </li>
 
     </ol>
 
     <span class="column_w100" style="height: 0.5em;"></span>
     <span class="flow_right">
-      <a href="https://www.cnmv.es/portal/Consultas/IIC/Fondo.aspx?nif=V42716340" target="_blank"> > prospectus </a>
+      <a href="https://www.cnmv.es/portal/Consultas/IIC/Fondo.aspx?nif=V42716340" target="_blank"> > folleto </a>
       <a class="a_blue" href="https://www.morningstar.es/es/funds/snapshot/snapshot.aspx?id=F000016DYL" target="_blank"> > morningstar </a>
     </span>
 
@@ -102,31 +102,36 @@
 </section>
 
 
+
 <!––  Contacto ––>
+
 <section class="bg_light">
 <div class="lyt_section flex-column form_contact">
 	
-	<h2>Join our newsletter</h2>
+	<h2>Apúntate a nuestra newsletter</h2>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./res/form.js"></script>
 
     <form name="contactForm" id="contactForm">
-        <input class="input" type="text" name="name" id="name" placeholder="Name (required)"> <!––  Name is required––>
-        <label class="input-warning input-name" > * We need a name </label>
-        <input class="input" type="text" name="email" id="email" placeholder="Email (required)">  <!––  Valid email is required: ex@abc.xyz––>
-        <label class="input-warning input-email" > * We need a valid email (format aaa@bbb.ccc) </label>
+        
+        <input class="input" type="text" name="name" id="name" placeholder="Nombre (obligatorio)"> <!––  Name is required––>
+        <label class="input-warning input-name" > * Necesitamos su nombre </label>
+        <input class="input" type="text" name="email" id="email" placeholder="Email (obligatorio)">  <!––  Valid email is required: ex@abc.xyz––>
+        <label class="input-warning input-email" > * Necesitamos un email válido (formato aaa@bbb.ccc) </label>
         <input class="input inputhidden" type="text" name="phone" id="phone" placeholder="Teléfono (opcional)">
-        <textarea style="height: 150px;" class="input inputhidden" name="message" id="message" placeholder="Escribenos un mensaje (opcional)"></textarea>
 
         <label class="check"  style="font-size: 0.8em;"> <input type="checkbox" name="cbox" id="cbox" >
-          Yes, I accept the <a href="./privacy.html" target="_blank">privacy policy</a> and agree to receive commercial information.
+          Sí, acepto la <a href="./privacidad.html" target="_blank">política de privacidad</a> y recibir comunicaciones comerciales.
         </label>
-        <label class="input-warning input-cbox" > * We can't reach you unless you agree to our policy.</label>
+        <label class="input-warning input-cbox" > * Es necesario aceptar nuestra política de privacidad.</label>
 
+        <textarea style="height: 150px;" class="input inputhidden" name="message" id="message" placeholder="Escribenos un mensaje (opcional)"></textarea>
+
+        
         <div class="input-holder">
-            <input class="button-empty mode-send" type="submit" class="submit" id="submit" value="Send">
-            <div class="button-filled mode-sent"> Sent </div>
+            <input class="button-empty mode-send" type="submit" class="submit" id="submit" value="Enviar">
+            <div class="button-filled mode-sent"> Enviado </div>
         </div>
 
     </form>
@@ -144,7 +149,7 @@
             <div class="img_fluid"> <img src="./res/l_a.png" ole="img" aria-label="Contacto"> </div>
         </div>
         <div class="flex-bottom">
-            <p class="h1_footer">Contact</p>
+            <p class="h1_footer">Contacto</p>
             <p><a href="https://goo.gl/maps/1AcRZGSZ31LoYUcBA" target="_blank">Rodríguez San Pedro 2, Madrid, Spain</a> </p>
             <p><a href="mailto:info@paradoxequityfund.com" target="_blank">info@paradoxequityfund.com</a></p>
             <p><a href="https://www.linkedin.com/company/paradox-capital" target="_blank">Linkedin</a></p>
@@ -152,13 +157,12 @@
     </div>
 
     <div class="column_w50 lyt_footer_right flex-bottom">
-        <p><a href="https://www.cnmv.es/portal/Consultas/IIC/Fondo.aspx?nif=V42716340" target="_blank">CNMV Documents</a></p>
-        <p>Copyright © 2021 - All rights reserved</p>
+        <p><a href="https://www.cnmv.es/portal/Consultas/IIC/Fondo.aspx?nif=V42716340" target="_blank"> Documentación CNMV</a></p>
+        <p>Copyright © 2021 - Todos los derechos reservados</p>
     </div>
 
   </div>
 </footer>
-
 
 
 </body>
