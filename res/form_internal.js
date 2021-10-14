@@ -33,7 +33,7 @@ $(function() {
         var post_data =  $("#supportForm").serialize();
 
         $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbwpZ8LE3ExWU4JIpbBs86aqnfJszQ6fbKhOCH0J4X21PeJM_4URucJX9hzhfXL0HQDw9g/exec",
+            url: "https://script.google.com/macros/s/AKfycbykIud2cv-ITjFvcm9cXlgpV8h3_-Ntsq-nJUR_DH11Qgl8GqgRwT9d215vGJUroQsRZA/exec",
             method: "POST",
             dataType: "json",     
             data: post_data,
