@@ -93,6 +93,10 @@ ul li {padding: 0em;}
 .lyt_section_lowpad { padding: 4em 0 ; }
 
 .lyt_top { padding-top: 2em; }
+@media screen and (max-width: 736px){ .lyt_top {padding-top: 0.5em; } }
+
+
+
 .lyt_h90 { min-height: 90vh; }
 .lyt_h92 { min-height: 92vh; }
 .lyt_h58 { min-height: 58vh; }
@@ -554,23 +558,23 @@ form {width: 80%;}
 
 
 .flow_dark{
-  color: #aaa;
-  border-bottom: 1px solid #aaa;
+  color: #5F94C8;
+  border-bottom: 1px solid #5F94C8;
 }
 
 .flow_dark:hover{
-  color: #292929;
-  border-bottom: 2px solid #292929;
+  color: #476895;
+  border-bottom: 2px dotted #476895;
 }
 
 .flow_dark .flow_arrow_small {
-  border-bottom: 2px solid #aaa;
-  border-right: 2px solid #aaa;
+  border-bottom: 2px solid #5F94C8;
+  border-right: 2px solid #5F94C8;
 }
 
 .flow_dark:hover .flow_arrow_small {
-  border-bottom: 2px solid #292929;
-  border-right: 2px solid #292929;
+  border-bottom: 2px solid #476895;
+  border-right: 2px solid #476895;
 }
 
 
@@ -581,8 +585,8 @@ form {width: 80%;}
 }
 
 .flow_light:hover{
-  color: #aaa;
-  border-bottom: 2px solid #aaa;
+  color: #fff;
+  border-bottom: 2px dotted #fff;
 }
 
 .flow_light .flow_arrow_small {
@@ -591,8 +595,8 @@ form {width: 80%;}
 }
 
 .flow_light:hover .flow_arrow_small {
-  border-bottom: 2px solid #aaa;
-  border-right: 2px solid #aaa;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
 }
 
 
@@ -606,14 +610,14 @@ form {width: 80%;}
   position: relative;  
   left: 50%; bottom: 25px;
   
-  border-bottom: 4px solid #aaa;
-  border-right: 4px solid #aaa;
+  border-bottom: 4px solid #5F94C8;
+  border-right: 4px solid #5F94C8;
   transform: translate(-50%, 0%) rotate(45deg);
 }
 
 .flow_arrow_full:hover{
-  border-bottom: 4px solid #292929;
-  border-right: 4px solid #292929;
+  border-bottom: 4px dotted #476895;
+  border-right: 4px dotted #476895;
 }
 
 
