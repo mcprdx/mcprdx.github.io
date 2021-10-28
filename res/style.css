@@ -32,6 +32,9 @@ body, input, select, textarea {font-family: Roboto, Raleway, Helvetica, sans-ser
 /* @media screen and (max-width: 360px) {body, input, select, textarea {font-size: 13pt;}} */
 
 
+b, strong { font-weight: bolder !important;}
+i { font-style: italic !important;}
+
 a { -moz-transition: border-bottom-color 0.2s ease; -webkit-transition: border-bottom-color 0.2s ease; -ms-transition: border-bottom-color 0.2s ease; transition: border-bottom-color 0.2s ease; color: inherit; text-decoration: none; border-bottom: solid 1px;}
 a:hover { color: inherit; text-decoration: none; border-bottom: dotted 1px; }
 
@@ -432,6 +435,20 @@ height: 30px;
 
 /* buttons */
 
+.button {
+  display:inline-block;
+  margin: 0.5em 0.5em;
+  background-color: inherit;
+  border-radius:4px;
+  padding: 6px 30px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
 .button-empty {
   display:inline-block;
   margin: 0.5em 0.5em;
@@ -454,7 +471,7 @@ height: 30px;
   display:inline-block;
   margin: 0.5em 0.5em;
   background-color: #292929;
-  color: white;
+  color: #fff;
   border-radius:4px;
   border: 2px solid #292929;
   padding: 6px 30px;
@@ -892,7 +909,62 @@ form {width: 80%;}
   .diag_arrow { border-width: 45px 0 45px 15px; }
 }
 
+/* disclaimers */
 
+.disclaimer h3{
+  margin-top: 0.5em;
+}
+
+.disclaimer p{
+  margin: 0.2em 0; 
+  font-size: 0.9em;
+}
+
+.disclaimer ul{
+  font-size: 0.9em;
+}
+
+.disclaimer table{
+  width: 100%;
+  font-size: 0.9em;
+  border:1px;
+}
+
+.disclaimer td{
+  padding: 6px;
+}
+
+
+/* cookies */
+
+.cookie{
+  background-color: #eee;
+
+  position: fixed;
+  right: 5%; bottom: 8%;
+
+  width: 470px;
+  
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.cookie-left{
+  text-align: center;
+  width: 320px;
+  padding: 0 10px 0 0;
+}
+
+.cookie-right{
+  width: 90px;
+}
+
+.button-cookie{
+  color: #fff;
+  background-color: #5F94C8;
+  border: 2px solid #5F94C8;
+}
 
 /* support contact */
 
