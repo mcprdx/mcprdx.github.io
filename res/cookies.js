@@ -4,7 +4,8 @@ function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     let expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    var cookieString = cname + "=" + cvalue + "; " + expires + "; path=/";
+    document.cookie = cookieString;
 }
 
 // Delete cookie
@@ -12,7 +13,8 @@ function deleteCookie(cname) {
     const d = new Date();
     d.setTime(d.getTime() + (24*60*60*1000));
     let expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=;" + expires + ";path=/";
+    var cookieString = cname + "=; " + expires + "; path=/";
+    document.cookie = cookieString;
 }
 
 // Read cookie
@@ -20,30 +22,29 @@ function getCookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
+    var cookieString = "";
+
     for(let i = 0; i <ca.length; i++) {
         let c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
+        while (c.charAt(0) == ' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) cookieString = c.substring(name.length, c.length);
     }
-    return "";
+
+    return cookieString;
 }
 
 // Set cookie consent
 function acceptCookieConsent(){
 
     document.getElementById("cookieNotice").style.display = "none";
-    deleteCookie('user_cookie_consent');
-    //alert("DEBUG A")
-    setCookie('user_cookie_consent', 1, 30);
-    //alert("DEBUG B")
+    
+    //getCookie("_consent")
+    deleteCookie('_consent');
+    setCookie('_consent', 1, 30);
 }
 
 
-let cookie_consent = getCookie("user_cookie_consent");
+let cookie_consent = getCookie("_consent");
 if(cookie_consent != ""){
     document.getElementById("cookieNotice").style.display = "none";
 }else{
