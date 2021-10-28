@@ -948,10 +948,11 @@ form {width: 80%;}
   right: 5%; bottom: 8%;
 
   width: 470px;
-  
+  max-width: 95%;
   border-radius: 10px;
   padding: 10px;
   font-size: 16px;
+
 }
 
 .cookie-left{
