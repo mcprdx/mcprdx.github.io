@@ -93,8 +93,9 @@ ul li {padding: 0em;}
 .lyt_section_lowpad { padding: 4em 0 ; }
 
 .lyt_top { padding-top: 2em; }
+.lyt_top_main { padding-top: 2em; }
 @media screen and (max-width: 736px){
-  .lyt_top {padding-top: 0em;}
+  .lyt_top_main {padding-top: 0em;}
 }
 
 .lyt_h90 { min-height: 90vh; }
@@ -948,7 +949,7 @@ form {width: 80%;}
   right: 5%; bottom: 8%;
 
   width: 470px;
-  max-width: 95%;
+  max-width: 90%;
   border-radius: 10px;
   padding: 10px;
   font-size: 16px;
@@ -957,7 +958,9 @@ form {width: 80%;}
 
 .cookie-left{
   text-align: center;
+
   width: 320px;
+  max-width: 100%;
   padding: 0 10px 0 0;
 }
 
