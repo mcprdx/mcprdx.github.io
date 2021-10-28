@@ -93,9 +93,9 @@ ul li {padding: 0em;}
 .lyt_section_lowpad { padding: 4em 0 ; }
 
 .lyt_top { padding-top: 2em; }
-@media screen and (max-width: 736px){ .lyt_top {padding-top: 0.5em; } }
-
-
+@media screen and (max-width: 736px){
+  .lyt_top {padding-top: 0em;}
+}
 
 .lyt_h90 { min-height: 90vh; }
 .lyt_h92 { min-height: 92vh; }
