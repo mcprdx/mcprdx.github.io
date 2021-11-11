@@ -538,6 +538,11 @@ height: 30px;
 
 /*form */
 
+.form_contact{
+}
+.form_contact_sent{ 
+  display: none !important;
+}
 
 .form_contact form{ width:100%; }
 

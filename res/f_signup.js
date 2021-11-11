@@ -57,8 +57,10 @@ $(function() {
                 if(response.result == "success") {
                     //alert("OK");
                     $('#signupForm')[0].reset();
+                    $(".form_contact").attr('style', 'display: none !important;');
+                    $(".form_contact_sent").attr('style', 'display: block !important;');
                     $(".mode-send").attr('style', 'display: none !important;');
-                    $(".mode-sent").attr('style', 'display: inline !important;');
+                    //$(".mode-sent").attr('style', 'display: inline !important;');
                 } else { alert("Something went wrong. Please try again."); }
             }
         });
