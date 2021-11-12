@@ -572,7 +572,11 @@ form {width: 80%;}
     border-bottom: 3px solid #555;
 }
 
-.check{ position: relative; top: -0.5em; font-size: 0.7em;}
+.check{
+  position: relative;
+  top: -0.5em;
+  font-size: 0.7em;
+}
 
 .input-holder {
   width: 100%;
@@ -588,7 +592,9 @@ form {width: 80%;}
   background-color: #5F94C8 !important;
   border: 3px solid #5F94C8 !important;
 }
-
+.mode-sending{
+  display: none;
+}
 
 
 /* navigation */
