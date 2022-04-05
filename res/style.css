@@ -285,6 +285,28 @@ ul li {padding: 0em;}
   left: calc(1rem + 130px);
 }
 
+.team-welzia{
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 0.8em 1em;
+  margin: auto 1em 10px ;
+  border-radius: 10px;  
+}
+
+.team-welzia p {
+  margin-top: 5px;
+}
+
+.team-welzia img{
+
+  width: 150px; /* TEMP, poner height */
+
+}
+
+.team-welzia a{
+  border-bottom: solid 0px;
+}
+
 
 /* nav */
 
@@ -301,9 +323,53 @@ height: 30px;
 }
 
 .navbar-brand{
+  margin: auto 0 ;
   padding: 0 !important;
-  margin: 0 !important;
+  /* margin: 0 !important; */
+  height: 30px;
 }
+
+.navbar-brand div{
+  display: inline-block;
+}
+
+.navbar-brand a{
+  vertical-align: bottom;
+}
+
+.navbar-brand img{
+  height: 30px;
+}
+
+
+.navbar-brand-nexus{
+  vertical-align: bottom;
+  color: #888;
+  font-family: Canela;
+  font-style: italic;
+  letter-spacing: normal;
+  font-size: 20px;
+  margin: 0 3px 1px 6px;
+}
+
+
+
+@media screen and (max-width: 480px){
+  .navbar-brand{
+    padding: auto 0 ;
+    margin: 0 !important;
+    height: 21px;
+  }
+  .navbar-brand img {
+    height: 21px;
+  }
+  .navbar-brand-nexus{
+    
+    font-size: 15px;
+    margin: 0 0px 1px 3px;
+  }
+}
+
 
 .navbar-toggler{
  border: 0px none transparent !important;
@@ -400,7 +466,7 @@ height: 30px;
     padding: 0.3em 10px !important;
   }
 
-  .navbar a {
+  .navbar-nav a {
     font-size: 1.8rem !important;
   }
 
@@ -475,7 +541,7 @@ height: 30px;
 
 .img_fluid{
 	display: block;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	position: relative;
   display: flex;
   align-items: center;
