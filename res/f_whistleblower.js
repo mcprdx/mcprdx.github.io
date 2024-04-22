@@ -7,22 +7,22 @@ $(function() {
         $(".mode-sending").attr('style', 'display: inline !important;');
 
         /* Validate */
-        $(".input-message").attr('style', 'display: none;');
+        $(".input-email").attr('style', 'display: none;');
 
         var check = true;
 
         var msg = document.forms["contactForm"]["MESSAGE"].value;
         
         if( msg.trim() == ''){
-            $(".input-message").attr('style', 'display: inline;');
+            $(".input-email").attr('style', 'display: inline;');
             check=false;
         }
+
         if(!check) {
             $(".mode-sending").attr('style', 'display: none !important;');
             $(".mode-send").attr('style', 'display: inline !important;');
             return false;
         }
-
 
         // regular post
         var post_data =  $("#contactForm").serialize()
@@ -33,6 +33,8 @@ $(function() {
             dataType: "json",     
             data: post_data,
             success: function(response) {
+
+                console.log(response)
 
                 if(response.result == "success") {
                     $('#contactForm')[0].reset();
