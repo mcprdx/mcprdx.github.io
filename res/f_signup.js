@@ -30,6 +30,29 @@ $(function() {
 
         if(!check) return false;
 
+        // regular post
+        var post_data =  $("#signupForm").serialize()
+
+        $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbwmxKOxPAHC1j4JPyPHBjAeN831YceA26sIzpThNLt3aOPeKj_EHz9Hh_EKqSjaQya38g/exec",
+            method: "POST",
+            dataType: "json",     
+            data: post_data,
+            success: function(response) {
+                if(response.result == "success") {
+                    //alert("OK");
+                    $('#signupForm')[0].reset();
+                    $(".form_contact").attr('style', 'display: none !important;');
+                    $(".form_contact_sent").attr('style', 'display: block !important;');
+                    $(".mode-send").attr('style', 'display: none !important;');
+                } else { alert("Something went wrong. Please try again.") }
+            },
+            error: function() { alert("Could not connect to the server. Please try again later.")  }
+        })
+
+
+        /*
+
         n_first = n_full.substr(0,n_full.indexOf(' '));
         n_last  = n_full.substr(n_full.indexOf(' ')+1); 
         //alert( n_first + ' - ' + n_last );
@@ -38,7 +61,8 @@ $(function() {
         n_first = encodeURIComponent(n_first);
         n_last  = encodeURIComponent(n_last);
 
-        /* Create final post */
+
+        // Create final post
         var post_data = 'EMAIL=' + email + '&FNAME=';
         //alert(post_data);
         if( n_first.trim() == ''){
@@ -47,6 +71,7 @@ $(function() {
             post_data = post_data + n_first + '&LNAME=' + n_last;
         }
         
+
         $.ajax({
             url: "https://paradoxequityfund.us5.list-manage.com/subscribe/post-json?u=67facca7c08294f0928b690f5&amp;id=3b25408006&c=?",
             type: "POST",     // type: $form.attr('method'),
@@ -72,6 +97,7 @@ $(function() {
                 
             }
         });
+        */
         
 
     });
