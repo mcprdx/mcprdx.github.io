@@ -49,7 +49,6 @@ $(function() {
             dataType: "json",     
             data: post_data,
             success: function(response) {
-
                 if(response.result == "success") {
                     $('#contactForm')[0].reset();
                     $(".form_contact").attr('style', 'display: none !important;');
@@ -59,7 +58,7 @@ $(function() {
             error: function() { alert("Could not connect to the server. Please try again later.")  }
         })
 
-
+        /*
         // newsletter section
         if ( newsletter == true){
 
@@ -71,7 +70,7 @@ $(function() {
             n_first = encodeURIComponent(n_first);
             n_last  = encodeURIComponent(n_last);
 
-            /* Create final post */
+            // Create final post
             var post_data = 'EMAIL=' + email + '&FNAME=';
             //alert(post_data);
             if( n_first.trim() == ''){
@@ -97,6 +96,7 @@ $(function() {
             });
 
         }
+        */
         
 
     });
